@@ -23,7 +23,7 @@ const Displays = () => {
 
   return (
     <div>
-      <h1>Delete an Photo from an Amazon S3 Bucket</h1>
+      <h1>Delete an Photo permanently from an Amazon S3 Bucket</h1>
       <input
         type="text"
         placeholder="Image name"

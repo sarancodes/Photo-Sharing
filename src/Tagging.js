@@ -11,15 +11,15 @@ function TagObjectAsHidden() {
       try {
         AWS.config.update({
             
-accessKeyId: 'AKIATTU73NOEPC34P4LO',
-secretAccessKey: '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',
-region: 'us-east-1',
+    accessKeyId: 'AKIATTU73NOEPC34P4LO',
+    secretAccessKey: 'tlCmKbrFeNqFkZCkkyexdwx+RkDcmD/9Q2l34isA',
+    region: 'us-east-1',
         });
 
         const s3 = new AWS.S3();
 
         const params = {
-          Bucket: 'your-bucket-name',
+          Bucket: 'myphotoaws',
           Key: objectKey,
           Tagging: {
             TagSet: [{ Key: 'hidden', Value: 'true' }],

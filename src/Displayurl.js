@@ -46,9 +46,13 @@ function S3ImageList() {
       <ul>
         {imageUrls.map((imageUrl,index) => (
           <li key={index}>
+            <img src={imageUrl} width="500" height="500"/>
+            <div>
             <a href={imageUrl} target="_blank" rel="noopener noreferrer">
               {imageUrl}
             </a>
+            </div>
+            
           </li>
         ))}
       </ul>
